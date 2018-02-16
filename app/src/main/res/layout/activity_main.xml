@@ -1,0 +1,79 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/clear"
+    android:gravity="center_vertical"
+    tools:context="com.gsk.www.gstrelatedwebsites.MainActivity"
+    android:orientation="horizontal">
+
+
+    <ImageButton
+        android:id="@+id/google"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/eway"
+        android:layout_marginTop="20dp"
+        android:gravity="center|bottom"
+        android:src="@drawable/google"
+        tools:ignore="UnknownId" />
+
+    <ImageButton
+        android:id="@+id/gst"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/google"
+        android:layout_below="@+id/google"
+        android:layout_marginTop="25dp"
+        android:gravity="center|bottom"
+        android:src="@drawable/gs" />
+
+    <ImageButton
+        android:id="@+id/eway"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/gst"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:gravity="center|bottom"
+        android:src="@drawable/eway" />
+
+    <ImageButton
+        android:id="@+id/icegate"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/eway"
+        android:layout_below="@+id/eway"
+        android:layout_marginTop="25dp"
+        android:gravity="center|bottom"
+        android:src="@drawable/ice" />
+
+    <ImageButton
+        android:id="@+id/hsn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/dgft"
+        android:layout_below="@+id/dgft"
+        android:layout_marginTop="14dp"
+        android:gravity="center|bottom"
+        android:src="@drawable/hs" />
+
+    <ImageButton
+        android:id="@+id/dgft"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/icegate"
+        android:layout_below="@+id/icegate"
+        android:layout_marginTop="22dp"
+        android:gravity="center|bottom"
+        android:src="@drawable/dgf" />
+
+
+</RelativeLayout>
+</ScrollView>
