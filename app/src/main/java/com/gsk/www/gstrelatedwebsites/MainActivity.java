@@ -10,12 +10,8 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
     ImageButton google,gst,eway,dgft,icegate,hsn;
-    //ImageButton  gmail,face,twiter,whatsapp,youtube,tn,daily,dinamalr;
     Context ctx;
-
-
-
-    @Override
+@Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate (savedInstanceState);
@@ -27,24 +23,9 @@ public class MainActivity extends AppCompatActivity {
         dgft=(ImageButton)findViewById (R.id.dgft);
         icegate=(ImageButton)findViewById (R.id.icegate);
         hsn=(ImageButton)findViewById (R.id.hsn);
-     /**  gmail=(ImageButton)findViewById (R.id.gmail);
-        face=(ImageButton)findViewById (R.id.facebook);
-        twiter=(ImageButton)findViewById (R.id.twitter);
-        whatsapp=(ImageButton)findViewById (R.id.whatsapp);
-        youtube=(ImageButton)findViewById (R.id.youtube);
-        tn=(ImageButton)findViewById (R.id.tamilnews);
-        daily=(ImageButton)findViewById (R.id.dinathandhi);
-        dinamalr=(ImageButton)findViewById (R.id.dinamalar); **/
+     
 
-
-
-
-
-
-
-
-
-        google.setOnClickListener (new View.OnClickListener () {
+google.setOnClickListener (new View.OnClickListener () {
             @Override
             public void onClick(View view) {
 
@@ -98,82 +79,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        /** gmail.setOnClickListener (new View.OnClickListener () {
-            @Override
-            public void onClick(View view) {
-
-                Intent  MyIntent =new Intent (Intent.ACTION_VIEW, Uri.parse ("https://www.google.com/gmail"));
-                ctx.startActivity (MyIntent);
-            }
-        });
-
-        face.setOnClickListener (new View.OnClickListener () {
-            @Override
-            public void onClick(View view) {
-
-                Intent  MyIntent =new Intent (Intent.ACTION_VIEW, Uri.parse ("https://www.facebook.com/"));
-                ctx.startActivity (MyIntent);
-            }
-        });
-
-        twiter.setOnClickListener (new View.OnClickListener () {
-            @Override
-            public void onClick(View view) {
-
-                Intent  MyIntent =new Intent (Intent.ACTION_VIEW, Uri.parse ("https://twitter.com/login"));
-                ctx.startActivity (MyIntent);
-            }
-        });
-
-        youtube.setOnClickListener (new View.OnClickListener () {
-            @Override
-            public void onClick(View view) {
-
-                Intent  MyIntent =new Intent (Intent.ACTION_VIEW, Uri.parse ("https://www.youtube.com/"));
-                ctx.startActivity (MyIntent);
-            }
-        });
-
-        whatsapp.setOnClickListener (new View.OnClickListener () {
-            @Override
-            public void onClick(View view) {
-
-                Intent  MyIntent =new Intent (Intent.ACTION_VIEW, Uri.parse ("https://web.whatsapp.com/%F0%9F%8C%90/en"));
-                ctx.startActivity (MyIntent);
-            }
-        });
-
-        tn.setOnClickListener (new View.OnClickListener () {
-            @Override
-            public void onClick(View view) {
-
-                Intent  MyIntent =new Intent (Intent.ACTION_VIEW, Uri.parse ("https://tamil.oneindia.com"));
-                ctx.startActivity (MyIntent);
-            }
-        });
-
-        daily.setOnClickListener (new View.OnClickListener () {
-            @Override
-            public void onClick(View view) {
-
-                Intent  MyIntent =new Intent (Intent.ACTION_VIEW, Uri.parse ("http://www.dailythanthi.com"));
-                ctx.startActivity (MyIntent);
-            }
-        });
-
-        dinamalr.setOnClickListener (new View.OnClickListener () {
-            @Override
-            public void onClick(View view) {
-
-                Intent  MyIntent =new Intent (Intent.ACTION_VIEW, Uri.parse ("http://www.dinamalar.com"));
-                ctx.startActivity (MyIntent);
-            }
-        }); **/
-
-
-
-
-
-
-    }
+       }
 }
